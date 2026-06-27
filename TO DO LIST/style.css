@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@300;400;600&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family: "Jost", sans-serif;
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background: linear-gradient(135deg,#667eea,#764ba2);
+}
+
+.container{
+    width:100%;
+    padding:20px;
+    display:flex;
+    justify-content:center;
+}
+
+.todo-app{
+    width:100%;
+    max-width:450px;
+    background:rgba(255,255,255,0.1);
+    backdrop-filter: blur(15px);
+    border-radius:20px;
+    padding:30px;
+    color:white;
+    box-shadow:0 10px 30px rgba(0,0,0,0.2);
+}
+
+.todo-app h1{
+    text-align:center;
+    margin-bottom:25px;
+}
+
+.input-area{
+    display:flex;
+    gap:10px;
+}
+
+.input-area input{
+    flex:1;
+    padding:12px;
+    border:none;
+    outline:none;
+    border-radius:25px;
+    font-size:16px;
+}
+
+.input-area button{
+    width:50px;
+    height:50px;
+    border:none;
+    border-radius:50%;
+    cursor:pointer;
+    background:#ff6f91;
+    color:white;
+    font-size:18px;
+    transition:0.3s;
+}
+
+.input-area button:hover{
+    transform:scale(1.1);
+}
+
+#task-list{
+    list-style:none;
+    margin-top:25px;
+}
+
+#task-list li{
+    background:rgba(255,255,255,0.15);
+    padding:15px;
+    margin-bottom:10px;
+    border-radius:12px;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.completed{
+    text-decoration:line-through;
+    opacity:0.6;
+}
+
+.actions{
+    display:flex;
+    gap:10px;
+}
+
+.actions button{
+    border:none;
+    background:none;
+    color:white;
+    cursor:pointer;
+    font-size:18px;
+}
